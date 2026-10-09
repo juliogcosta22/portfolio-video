@@ -31,7 +31,7 @@ Abrir com qualquer servidor local, ex.: `npx http-server . -p 5300 -c-1`.
   Mudou ou criou um texto no HTML? Adicione/atualize a chave em `i18n.js`, senão ele fica em PT na versão EN.
 - Trabalhos (`data.js`) e `config.js`: cada campo de texto aceita uma versão `_en` (`titulo_en`, `resumo_en`, `funcao_en`…). Sem ela, aparece o PT.
 - O pedido de orçamento sai no idioma que o visitante estava usando.
-- As faixas de investimento estão em R$ nas duas versões.
+- Faixas de investimento: R$ no PT e US$ no EN (equivalente aproximado, arredondado). Valores ficam em `i18n.js`.
 
 ## Formulário de orçamento
 - Passo A escolhe o serviço (Vídeo / Thumbnail / Os dois) e revela só os blocos relevantes.
