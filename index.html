@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Julio Costa · Edição de vídeo e thumbnails</title>
+  <meta name="description" content="Portfólio de edição de vídeo e thumbnails. Veja os trabalhos e peça um orçamento.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#topo"><span class="rec" aria-hidden="true"></span><span data-site="apelido">JULIO</span></a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#videos">Vídeos</a>
+      <a href="#thumbs">Thumbs</a>
+      <a href="#processo">Como funciona</a>
+    </nav>
+    <a class="btn btn--accent btn--sm" href="#orcamento">Pedir orçamento</a>
+  </header>
+
+  <main id="topo">
+    <!-- HERO ======================================================= -->
+    <section class="hero">
+      <div class="hero__meta mono">
+        <span>REC</span><span id="tc">00:00:00:00</span><span data-site="cidade"></span>
+      </div>
+      <h1 class="hero__title">
+        <span class="line">Edito vídeos que</span>
+        <span class="line line--accent">prendem.</span>
+        <span class="line">Faço thumbs que</span>
+        <span class="line line--accent">clicam.</span>
+      </h1>
+      <p class="hero__sub"><span data-site="nome"></span> · <span data-site="funcao"></span>. Do material bruto ao clique: corte, ritmo, legenda, som e a capa que faz alguém parar de rolar.</p>
+
+      <div class="monitors">
+        <a class="monitor" href="#videos">
+          <span class="monitor__label mono">PROGRAM · 01</span>
+          <span class="monitor__screen monitor__screen--video">
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </span>
+          <span class="monitor__name">Edição de vídeo</span>
+          <span class="monitor__hint mono">YouTube · Shorts · Reels · Comercial →</span>
+        </a>
+        <a class="monitor" href="#thumbs">
+          <span class="monitor__label mono">SOURCE · 02</span>
+          <span class="monitor__screen monitor__screen--thumb">
+            <span class="fake-thumb-text">CLICA<br>AQUI</span>
+          </span>
+          <span class="monitor__name">Thumbnails</span>
+          <span class="monitor__hint mono">YouTube · Capas · Miniaturas →</span>
+        </a>
+      </div>
+
+      <div class="timeline" aria-hidden="true">
+        <div class="timeline__ruler mono"><span>00:00</span><span>00:15</span><span>00:30</span><span>00:45</span><span>01:00</span></div>
+        <div class="track track--v"><i style="--w:18%"></i><i style="--w:9%"></i><i style="--w:24%"></i><i style="--w:6%"></i><i style="--w:14%"></i><i style="--w:20%"></i></div>
+        <div class="track track--a"><i style="--w:40%"></i><i style="--w:28%"></i><i style="--w:26%"></i></div>
+        <div class="playhead"></div>
+      </div>
+    </section>
+
+    <!-- VÍDEOS ===================================================== -->
+    <section class="section" id="videos">
+      <div class="section__head">
+        <span class="section__num mono">01</span>
+        <h2 class="section__title">Edição de vídeo</h2>
+        <div class="filters" role="tablist" aria-label="Filtrar vídeos">
+          <button class="chip is-active" data-filter="todos" role="tab" aria-selected="true">Todos</button>
+          <button class="chip" data-filter="horizontal" role="tab" aria-selected="false">Horizontal</button>
+          <button class="chip" data-filter="vertical" role="tab" aria-selected="false">Vertical</button>
+        </div>
+      </div>
+      <div class="video-grid" id="video-grid"></div>
+    </section>
+
+    <!-- THUMBS ===================================================== -->
+    <section class="section" id="thumbs">
+      <div class="section__head">
+        <span class="section__num mono">02</span>
+        <h2 class="section__title">Thumbnails</h2>
+        <p class="section__note">Clique numa thumb pra ver em tamanho real.</p>
+      </div>
+      <div class="thumb-grid" id="thumb-grid"></div>
+    </section>
+
+    <!-- PROCESSO =================================================== -->
+    <section class="section" id="processo">
+      <div class="section__head">
+        <span class="section__num mono">03</span>
+        <h2 class="section__title">Como funciona</h2>
+      </div>
+      <ol class="steps">
+        <li><span class="mono">01</span><h3>Você manda o briefing</h3><p>Preenche o formulário com tudo que tiver: referências, material, prazo.</p></li>
+        <li><span class="mono">02</span><h3>Orçamento em até 24h</h3><p>Volto com valor, prazo e dúvidas, se houver.</p></li>
+        <li><span class="mono">03</span><h3>Primeira versão</h3><p>Entrego a prévia no prazo combinado.</p></li>
+        <li><span class="mono">04</span><h3>Ajustes e entrega</h3><p>Rodada de ajustes incluída e arquivo final no formato certo.</p></li>
+      </ol>
+    </section>
+
+    <!-- ORÇAMENTO ================================================== -->
+    <section class="section section--quote" id="orcamento">
+      <div class="section__head">
+        <span class="section__num mono">04</span>
+        <h2 class="section__title">Pedir orçamento</h2>
+        <p class="section__note">Quanto mais detalhe, mais certeiro o orçamento. Só os campos com * são obrigatórios.</p>
+      </div>
+
+      <form class="quote" id="quote-form" novalidate>
+        <!-- Serviço -->
+        <fieldset class="block">
+          <legend><span class="mono">A</span> O que você precisa? *</legend>
+          <div class="service-pick">
+            <label class="pick"><input type="radio" name="servico" value="Edição de vídeo" required><span><b>Edição de vídeo</b><small>Longo, Shorts, Reels, comercial</small></span></label>
+            <label class="pick"><input type="radio" name="servico" value="Thumbnail"><span><b>Thumbnail</b><small>Uma ou um pacote</small></span></label>
+            <label class="pick"><input type="radio" name="servico" value="Vídeo + Thumbnail"><span><b>Os dois</b><small>Vídeo editado com a thumb</small></span></label>
+          </div>
+        </fieldset>
+
+        <!-- Contato -->
+        <fieldset class="block">
+          <legend><span class="mono">B</span> Sobre você</legend>
+          <div class="grid2">
+            <label class="field"><span>Nome *</span><input name="nome" required autocomplete="name"></label>
+            <label class="field"><span>E-mail *</span><input name="email" type="email" required autocomplete="email"></label>
+            <label class="field"><span>WhatsApp</span><input name="whatsapp" type="tel" autocomplete="tel" placeholder="(11) 90000-0000"></label>
+            <label class="field"><span>Link do canal ou perfil</span><input name="canal" type="url" placeholder="https://youtube.com/@seucanal"></label>
+            <label class="field"><span>Nicho do conteúdo</span><input name="nicho" placeholder="Games, tech, vlog, finanças…"></label>
+            <label class="field"><span>Como me conheceu?</span><input name="origem" placeholder="Instagram, indicação…"></label>
+          </div>
+        </fieldset>
+
+        <!-- Vídeo -->
+        <fieldset class="block" data-for="video" hidden>
+          <legend><span class="mono">C</span> Sobre o vídeo</legend>
+          <div class="grid2">
+            <label class="field"><span>Tipo de vídeo *</span>
+              <select name="video_tipo" data-req>
+                <option value="">Escolha</option>
+                <option>YouTube longo (horizontal)</option>
+                <option>Shorts / Reels / TikTok (vertical)</option>
+                <option>Cortes de podcast / live</option>
+                <option>Comercial / anúncio</option>
+                <option>Vlog</option>
+                <option>Institucional / evento</option>
+                <option>Outro</option>
+              </select>
+            </label>
+            <label class="field"><span>Quantos vídeos?</span>
+              <select name="video_qtd">
+                <option>1 vídeo avulso</option>
+                <option>2 a 4 por mês</option>
+                <option>5 a 10 por mês</option>
+                <option>Mais de 10 por mês</option>
+              </select>
+            </label>
+            <label class="field"><span>Duração do material bruto</span><input name="video_bruto" placeholder="Ex.: 1h20 de gravação"></label>
+            <label class="field"><span>Duração final desejada</span><input name="video_final" placeholder="Ex.: 10 a 12 min"></label>
+          </div>
+
+          <div class="field"><span>O que a edição precisa ter?</span>
+            <div class="checks">
+              <label><input type="checkbox" name="video_itens" value="Cortes dinâmicos / ritmo"><span>Cortes dinâmicos</span></label>
+              <label><input type="checkbox" name="video_itens" value="Legendas animadas"><span>Legendas animadas</span></label>
+              <label><input type="checkbox" name="video_itens" value="Motion graphics / textos"><span>Motion graphics</span></label>
+              <label><input type="checkbox" name="video_itens" value="Memes / efeitos"><span>Memes e efeitos</span></label>
+              <label><input type="checkbox" name="video_itens" value="Correção de cor / color grading"><span>Color grading</span></label>
+              <label><input type="checkbox" name="video_itens" value="Trilha e sound design"><span>Trilha e sound design</span></label>
+              <label><input type="checkbox" name="video_itens" value="Tratamento de áudio"><span>Limpeza de áudio</span></label>
+              <label><input type="checkbox" name="video_itens" value="B-roll / imagens de apoio"><span>B-roll</span></label>
+              <label><input type="checkbox" name="video_itens" value="Zoom / reenquadramento"><span>Zooms</span></label>
+              <label><input type="checkbox" name="video_itens" value="Intro / vinheta"><span>Intro / vinheta</span></label>
+            </div>
+          </div>
+
+          <div class="field"><span>Formatos de entrega</span>
+            <div class="checks">
+              <label><input type="checkbox" name="video_formatos" value="16:9"><span>16:9 (YouTube)</span></label>
+              <label><input type="checkbox" name="video_formatos" value="9:16"><span>9:16 (Shorts/Reels)</span></label>
+              <label><input type="checkbox" name="video_formatos" value="1:1"><span>1:1 (feed)</span></label>
+              <label><input type="checkbox" name="video_formatos" value="4:5"><span>4:5 (feed)</span></label>
+            </div>
+          </div>
+
+          <div class="grid2">
+            <label class="field"><span>Link do material bruto</span><input name="video_material" type="url" placeholder="Google Drive, Dropbox, WeTransfer…"></label>
+            <label class="field"><span>Software / arquivo de projeto?</span>
+              <select name="video_projeto">
+                <option>Só o vídeo final</option>
+                <option>Quero o projeto Premiere</option>
+                <option>Quero o projeto DaVinci</option>
+                <option>Quero o projeto After Effects</option>
+              </select>
+            </label>
+          </div>
+          <label class="field"><span>Vídeos de referência (estilo que você gosta)</span><textarea name="video_refs" rows="3" placeholder="Cole links, um por linha. Diga o que gosta em cada um."></textarea></label>
+        </fieldset>
+
+        <!-- Thumb -->
+        <fieldset class="block" data-for="thumb" hidden>
+          <legend><span class="mono" data-letter>C</span> Sobre a thumbnail</legend>
+          <div class="grid2">
+            <label class="field"><span>Quantas thumbs? *</span>
+              <select name="thumb_qtd" data-req>
+                <option value="">Escolha</option>
+                <option>1 thumb</option>
+                <option>Pacote de 4</option>
+                <option>Pacote de 8</option>
+                <option>Mensal (mais de 8)</option>
+              </select>
+            </label>
+            <label class="field"><span>Formato</span>
+              <select name="thumb_formato">
+                <option>16:9 · YouTube (1280×720)</option>
+                <option>9:16 · Shorts / Reels / Stories</option>
+                <option>1:1 · Feed</option>
+                <option>Outro</option>
+              </select>
+            </label>
+            <label class="field"><span>Título do vídeo</span><input name="thumb_titulo" placeholder="O título que vai no YouTube"></label>
+            <label class="field"><span>Texto na thumb</span><input name="thumb_texto" placeholder="Ex.: 24H SEM ÁGUA (ou deixe comigo)"></label>
+          </div>
+          <label class="field"><span>Sobre o que é o vídeo?</span><textarea name="thumb_assunto" rows="3" placeholder="Resumo rápido: o que acontece, qual o momento mais forte."></textarea></label>
+
+          <div class="field"><span>Que sensação a thumb deve passar?</span>
+            <div class="checks">
+              <label><input type="checkbox" name="thumb_emocao" value="Curiosidade"><span>Curiosidade</span></label>
+              <label><input type="checkbox" name="thumb_emocao" value="Choque / surpresa"><span>Choque</span></label>
+              <label><input type="checkbox" name="thumb_emocao" value="Humor"><span>Humor</span></label>
+              <label><input type="checkbox" name="thumb_emocao" value="Urgência"><span>Urgência</span></label>
+              <label><input type="checkbox" name="thumb_emocao" value="Autoridade / confiança"><span>Autoridade</span></label>
+              <label><input type="checkbox" name="thumb_emocao" value="Minimalista / limpa"><span>Limpa</span></label>
+            </div>
+          </div>
+
+          <div class="field"><span>O que deve aparecer?</span>
+            <div class="checks">
+              <label><input type="checkbox" name="thumb_elementos" value="Meu rosto"><span>Meu rosto</span></label>
+              <label><input type="checkbox" name="thumb_elementos" value="Produto / objeto"><span>Produto</span></label>
+              <label><input type="checkbox" name="thumb_elementos" value="Lugar / cenário"><span>Cenário</span></label>
+              <label><input type="checkbox" name="thumb_elementos" value="Antes e depois"><span>Antes e depois</span></label>
+              <label><input type="checkbox" name="thumb_elementos" value="Setas / círculos"><span>Setas e círculos</span></label>
+              <label><input type="checkbox" name="thumb_elementos" value="Logo / marca"><span>Logo</span></label>
+            </div>
+          </div>
+
+          <div class="grid2">
+            <label class="field"><span>Cores do canal / identidade</span><input name="thumb_cores" placeholder="Ex.: amarelo e preto, ou #FFCC00"></label>
+            <label class="field"><span>Fotos e arquivos</span><input name="thumb_arquivos" type="url" placeholder="Link de pasta com fotos, logo, prints"></label>
+          </div>
+          <label class="field"><span>Thumbs de referência</span><textarea name="thumb_refs" rows="3" placeholder="Links de thumbs ou canais que você curte, um por linha."></textarea></label>
+        </fieldset>
+
+        <!-- Prazo e verba -->
+        <fieldset class="block" data-for="any" hidden>
+          <legend><span class="mono" data-letter>D</span> Prazo e investimento</legend>
+          <div class="grid2">
+            <label class="field"><span>Para quando precisa? *</span><input name="prazo" type="date" data-req></label>
+            <label class="field"><span>Faixa de investimento</span>
+              <select name="verba">
+                <option>Prefiro receber uma proposta</option>
+                <option>Até R$ 150</option>
+                <option>R$ 150 a R$ 400</option>
+                <option>R$ 400 a R$ 1.000</option>
+                <option>Acima de R$ 1.000</option>
+                <option>Mensal / recorrente</option>
+              </select>
+            </label>
+          </div>
+          <label class="field"><span>Algo mais?</span><textarea name="obs" rows="4" placeholder="O que não pode faltar, o que você odeia, qualquer detalhe."></textarea></label>
+        </fieldset>
+
+        <div class="quote__foot" hidden>
+          <p class="quote__error" id="quote-error" role="alert"></p>
+          <button class="btn btn--accent btn--lg" type="submit">Enviar pedido de orçamento</button>
+        </div>
+      </form>
+
+      <div class="sent" id="quote-sent" hidden>
+        <span class="mono sent__tag">● RENDER CONCLUÍDO</span>
+        <h3 class="sent__title" id="sent-title">Pedido enviado!</h3>
+        <p id="sent-text">Respondo em até 24h no e-mail ou WhatsApp que você deixou.</p>
+        <div class="sent__actions" id="sent-actions"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="footer__big" data-site="apelido">JULIO</span>
+    <div class="footer__links" id="footer-links"></div>
+    <span class="mono footer__copy">© <span id="year"></span> <span data-site="nome"></span></span>
+  </footer>
+
+  <!-- Lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-label="Visualização">
+    <button class="lightbox__close" type="button" aria-label="Fechar"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="lightbox__body" id="lightbox-body"></div>
+    <p class="lightbox__caption" id="lightbox-caption"></p>
+  </dialog>
+
+  <script src="config.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
