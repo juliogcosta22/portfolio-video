@@ -31,7 +31,37 @@ Abrir com qualquer servidor local, ex.: `npx http-server . -p 5300 -c-1`.
   Mudou ou criou um texto no HTML? Adicione/atualize a chave em `i18n.js`, senão ele fica em PT na versão EN.
 - Trabalhos (`data.js`) e `config.js`: cada campo de texto aceita uma versão `_en` (`titulo_en`, `resumo_en`, `funcao_en`…). Sem ela, aparece o PT.
 - O pedido de orçamento sai no idioma que o visitante estava usando.
-- Faixas de investimento: R$ no PT e US$ no EN (equivalente aproximado, arredondado). Valores ficam em `i18n.js`.
+- Faixas de investimento: R$ no PT e US$ no EN. As de US$ vêm da pesquisa abaixo. Valores ficam em `i18n.js`.
+
+## Pesquisa de preços (mercado gringo)
+Fonte: vagas postadas num canal de Discord, jul–out 2026, levantadas pelo Julio
+(painel "Vagas de edição e thumbnail — Discord"). Preço = primeiro valor citado na vaga, **por vídeo**, em US$.
+
+| Nicho | Vagas | US$ short | US$ long |
+|---|---|---|---|
+| Anúncios, DTC/UGC, marcas e agências | 42 | 40 | — |
+| Roblox / Minecraft (animação) | 41 | 50 | 175 |
+| Animação 2D/3D e motion (faceless) | 40 | 83 | 175 |
+| Personal brand / vlog / talking head | 34 | 50 | 175 |
+| Documentário / história / video essay | 33 | — | 200 |
+| Celebridades / filmes / anime / K-pop | 28 | 45 | 150 |
+| Games (gameplay, montagem, análise) | 26 | 35 | 300 |
+| Podcast / streamer / clipes | 22 | 30 | — |
+| Commentary / memes / internet culture | 19 | 28 | — |
+| IA / tech / SaaS | 16 | 100 | 200 |
+| True crime / bodycam / terror | 15 | — | 263 |
+| Finanças / negócios / riqueza | 12 | — | 130 |
+| Educação / explainer | 10 | 65 | 275 |
+| Fitness / saúde / looksmax | 7 | — | 250 |
+| Ranking / tier list / listas | 6 | — | 100 |
+| Genérico / não especificado | 86 | 30 | 200 |
+
+Vagas de games competitivos citaram de US$ 25 (shorts de montagem) a US$ 550 (documentário LoL) e US$ 1.100 (video essay Clash Royale).
+
+Leitura usada nas faixas EN: short-form até ~US$ 50; short elaborado (animação, IA/tech) até ~US$ 100–150;
+long-form US$ 150–300; acima de US$ 300 é documentário/video essay premium ou pacote.
+
+**Thumbnail:** a pesquisa tem só 1 vaga de thumb (US$ 20, CS/esports). Dado insuficiente para precificar thumbs.
 
 ## Formulário de orçamento
 - Passo A escolhe o serviço (Vídeo / Thumbnail / Os dois) e revela só os blocos relevantes.

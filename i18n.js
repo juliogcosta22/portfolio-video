@@ -142,11 +142,13 @@ window.I18N_EN = {
   "Para quando precisa? *": "When do you need it? *",
   "Faixa de investimento": "Budget range",
   "Prefiro receber uma proposta": "I'd rather get a proposal",
-  // Faixas em dólar: equivalente aproximado das faixas em R$, arredondado.
-  "Até R$ 150": "Up to US$ 30",
-  "R$ 150 a R$ 400": "US$ 30 to US$ 75",
-  "R$ 400 a R$ 1.000": "US$ 75 to US$ 200",
-  "Acima de R$ 1.000": "Over US$ 200",
+  // Faixas em dólar: baseadas na pesquisa de vagas do Discord (jul–out 2026),
+  // preço por vídeo. Short ~US$ 25–50 (animação/IA até ~100); long ~US$ 130–300;
+  // documentário/video essay premium US$ 550–1.100. Ver CLAUDE.md › Pesquisa de preços.
+  "Até R$ 150": "Up to US$ 50 (short-form)",
+  "R$ 150 a R$ 400": "US$ 50 to US$ 150",
+  "R$ 400 a R$ 1.000": "US$ 150 to US$ 300 (long-form)",
+  "Acima de R$ 1.000": "Over US$ 300",
   "Mensal / recorrente": "Monthly / recurring",
   "Algo mais?": "Anything else?",
   "O que não pode faltar, o que você odeia, qualquer detalhe.": "Must-haves, things you hate, any detail.",
