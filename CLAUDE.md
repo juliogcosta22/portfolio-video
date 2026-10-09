@@ -24,6 +24,15 @@ Abrir com qualquer servidor local, ex.: `npx http-server . -p 5300 -c-1`.
 - Fontes: Anton (títulos), Instrument Sans (texto), IBM Plex Mono (timecodes/rótulos).
 - Sem emoji como ícone; ícones são SVG inline.
 
+## Idiomas (PT e EN)
+- O site tem português e inglês, com seletor PT | EN no topo.
+- Idioma inicial: `?lang=en` / `?lang=pt` na URL › última escolha do visitante › idioma do navegador.
+- **O português no `index.html` é a fonte.** `i18n.js` guarda só o inglês, com o texto exato em PT como chave.
+  Mudou ou criou um texto no HTML? Adicione/atualize a chave em `i18n.js`, senão ele fica em PT na versão EN.
+- Trabalhos (`data.js`) e `config.js`: cada campo de texto aceita uma versão `_en` (`titulo_en`, `resumo_en`, `funcao_en`…). Sem ela, aparece o PT.
+- O pedido de orçamento sai no idioma que o visitante estava usando.
+- As faixas de investimento estão em R$ nas duas versões.
+
 ## Formulário de orçamento
 - Passo A escolhe o serviço (Vídeo / Thumbnail / Os dois) e revela só os blocos relevantes.
 - Campos obrigatórios: serviço, nome, e-mail, tipo de vídeo ou quantidade de thumbs, prazo.

@@ -5,7 +5,9 @@ window.SITE = {
   nome: "Julio Costa",
   apelido: "JULIO",                 // aparece grande no topo
   funcao: "Editor de vídeo & thumbmaker",
+  funcao_en: "Video editor & thumbnail designer",
   cidade: "Brasil · trabalho remoto",
+  cidade_en: "Brazil · working remotely",
 
   contato: {
     email: "contato@exemplo.com",   // TROCAR

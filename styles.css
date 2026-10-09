@@ -69,6 +69,11 @@ button { font: inherit; color: inherit; }
 .nav { display: flex; gap: 26px; margin-left: auto; }
 .nav a { text-decoration: none; color: var(--muted); font-size: 15px; transition: color .15s; }
 .nav a:hover { color: var(--text); }
+.lang { display: flex; border: 1px solid var(--line-2); border-radius: 999px; padding: 3px; }
+.lang button { border: 0; background: none; color: var(--muted); font: 600 12px var(--mono); letter-spacing: .06em; padding: 5px 10px; border-radius: 999px; cursor: pointer; }
+.lang button:hover { color: var(--text); }
+.lang button[aria-pressed="true"] { background: var(--text); color: var(--bg); }
+.lang button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 /* ---------- Hero ---------- */
 .hero { padding: clamp(40px, 8vw, 96px) var(--gutter) 0; position: relative; }
@@ -265,13 +270,14 @@ input[type=date] { color-scheme: dark; }
 /* ---------- Responsivo ---------- */
 @media (max-width: 900px) {
   .nav { display: none; }
-  .topbar .btn { margin-left: auto; }
+  .topbar .lang { margin-left: auto; }
   .video-grid .card { grid-column: span 12; }
   .video-grid .card--vertical { grid-column: span 6; }
   .thumb-grid { grid-template-columns: 1fr 1fr; }
   .steps { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 640px) {
+  .topbar { gap: 12px; }
   .monitors { grid-template-columns: 1fr; }
   .thumb-grid { grid-template-columns: 1fr; }
   .thumb-grid .card--big { grid-column: auto; grid-row: auto; }
